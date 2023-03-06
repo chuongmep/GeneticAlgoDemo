@@ -20,7 +20,7 @@ for (int generation = 0; generation < maxGenerations; generation++)
 {
     population.Sort();
     Console.WriteLine($"Generation {generation}: best fitness = {population[0].Fitness()}, best solution = {population[0]}");
-
+    Console.WriteLine("");
     List<Chromosome> newPopulation = new List<Chromosome>();
     for (int i = 0; i < populationSize; i++)
     {
